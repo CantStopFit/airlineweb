@@ -1,5 +1,5 @@
 <?php
-    include_once 'header.php'
+    include_once 'navagations/header.php'
 ?>
     <main class="hero">
         <img src="imgs/americanPlaneAtGateCroped.JPG" alt="" id="desktop-hero-image">
@@ -26,5 +26,5 @@
         <div class="spacer"></div>
     </section>
 <?php 
-    include_once 'footer.php'
+    include_once 'navagations/footer.php'
 ?>
