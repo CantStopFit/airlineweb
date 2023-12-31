@@ -2,7 +2,7 @@
 
 if (isset($_POST["submit"])) {
     
-    $name = $_POST["submit"];
+    $name = $_POST["name"];
     $email = $_POST["email"];
     $username = $_POST["uid"];
     $pwd = $_POST["pwd"];
@@ -27,7 +27,7 @@ if (isset($_POST["submit"])) {
         header("location: ../signup.php?error=passwordsdontmatch");
         exit();
     }
-    if (uidExists($conn, $username) !== false) {
+    if (uidExists($conn, $username, $email) !== false) {
         header("location: ../signup.php?error=usernametaken");
         exit();
     }

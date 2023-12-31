@@ -1,9 +1,13 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airline Website</title>
+    <title>American Airlines</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="navagations/navagations.css">
     <link rel="stylesheet" href="css/login-signup.css">
@@ -22,8 +26,16 @@
             <li><a href="index.php">Flights</a></li>
             <li><a href="index.php">Hotels</a></li>
             <li><a href="index.php">Cars</a></li>
-            <li><a href="signup.php">Signup</a></li>
-            <li><a href="login.php">Login</a></li>
+            <?php
+                if (isset($_SESSION["useruid"])) {
+                    echo "<li><a href='profile.php'>Dashboard</a></li>";
+                    echo "<li><a href='includes/logout.inc.php'>Logout</a></li>";
+                }
+                else {
+                    echo "<li><a href='signup.php'>Signup</a></li>";
+                    echo "<li><a href='login.php'>Login</a></li>";
+                }
+            ?>
         </ul>
     </div> 
     </div>
