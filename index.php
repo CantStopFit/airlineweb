@@ -12,12 +12,8 @@
             }
         }
         ?>
-        <div class="rotating-hero">
-            <img src="imgs/aaLogo.png" alt="">
-            <img src="imgs/IMG_1329.jpg" alt="">
-            <img src="imgs/IMG_1330.jpg" alt="">
-            <img src="imgs/IMG_1331.WEBP" alt="">
-        </div>
+
+        <img src="imgs/untitled-design.png" alt="" width="100%">
 <?php 
     include_once 'navagations/footer.php'
 ?>
