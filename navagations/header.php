@@ -18,7 +18,7 @@
     <div class="header">
     <div class="header-branding">
         <img src="imgs/aaLogo.png" alt="">   
-        <h1>American Airlines</h1>
+        <h1>American</h1>
     </div>
     <div class="header-navagation">
         <ul>

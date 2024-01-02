@@ -10,96 +10,18 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #e9e6e6;
 }
-.hero img {
+
+
+.error-msg {
+    background-color: rgba(255, 0, 0, 0.4);
+    border-bottom: 3px solid #ff0000;
+    padding: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
 }
 
-#mobile-hero-image {
-    display: none;
-}
-
-.home-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.plan-your-trip {
-    text-align: center;
-    width: 50%;
-    padding-top: 20px;
-    background-color: #f7f6f6;
-    margin-top: 10px;
-    padding: 13px;
-}
-
-#plan-heading {
-    font-size: 3rem;
-}
-
-.plan-cards {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-}
-
-.plan-card {
-    height: 8rem;
-    width: 7rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    background-color: rgba(4, 163, 226, 0.473);
-    border: 2px solid rgb(4, 163, 226);
-    border-radius: 7px;
-}
-
-.plan-card h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-.plan-card span {
-    font-size: 1.5rem;
-}
-
-.spacer {
-    height: 4rem;
-}
-@media screen and (max-width: 1013px) {
-    .plan-your-trip {
-        width: 75%;
-    }
-}
-@media screen and (max-width: 700px) {
-    #mobile-hero-image {
-        display: block;
-    }
-
-    #desktop-hero-image {
-        display: none;
-    }
-
-    #plan-heading {
-        font-size: 2rem;
-    }
-}
-
-@media screen and (max-width: 560px) {
-    .plan-cards {
-        flex-wrap: wrap;
-    }
-
-    .plan-card {
-        width: 55%;
-    }
-}
-
-.test {
-    font-size: 30rem;
+.error-msg p {
+    font-size: 20px;
 }
