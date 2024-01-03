@@ -75,3 +75,82 @@ body {
         left: 0;
     }
 }
+.body {
+    margin: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}
+
+.home-grid-item {
+    background-color: #dbdada;
+}
+
+.aadvantage {
+    grid-area: 1 / 1 / 2 / -1;
+}
+
+.aadvantage-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.aadvantage-text {
+    padding: 5px;
+}
+
+.aadvantage-content h1 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.aadvantage-text span {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.join-now a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.join-now {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+    cursor: pointer;
+  }
+  
+  .join-now::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .join-now:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  }
+  .item {
+    background-color: red;
+    border: 3px solid black;
+  }
+
+  .item-1 {
+    grid-row: 1 / 5;
+    grid-column: 1 / 3;
+  }
