@@ -21,11 +21,6 @@
                 <img src="imgs/hero/two-planes-at-gate.png" alt="">
             </figure>
         </div>
-        <?php
-        if (isset($_SESSION["useruid"])) {
-            echo "<h3>Hello there " . $_SESSION["useruid"] . "</h3>";
-        }
-        ?>
         <main class="body">
             <div class="home-grid-item aadvantage">
                 <div class="aadvantage-content">
